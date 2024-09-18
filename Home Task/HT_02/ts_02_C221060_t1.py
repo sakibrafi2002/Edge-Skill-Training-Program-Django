@@ -31,7 +31,7 @@ game_result = False
 
 #initialize a for loop for the attempts
 for counter in range(7 , 0 , -1):
-    print("You have total ", counter , "chances")
+    print("You have only ", counter , "chances left.")
     guessed_number = int(input("Guess a number between 1 to 100 : ")) # takes input from the user
     if guessed_number == random_number: # checks if the users guessed number is equal to the generated random number or not
         print("Congratulations! Your guess is correct.")  # prints the message
@@ -51,5 +51,6 @@ for counter in range(7 , 0 , -1):
 # if the game_result variable is false that means the player loose the game
 if game_result == False:  # checks if the game_result variable is false or not
     print("You loose the Game. Better luck next time. :-)") # prints a message for the player
+    print("The Number is :" , random_number) # if you loose the game it prints the answer
     
     
