@@ -1,35 +1,36 @@
-# Interface segregations (ISP) ( SOLID -> I)
+# Interface segregation (ISP) ( SOLID -> I)
 
-# in vehicle some are drivable and some are flyable, there is note that is both.
-# So it is not logical that drive and fly contains in the same parent class like the following code 
-# Not recommended approach: A single Vehicle class that contains both drive and fly methods
-# This isn't logical because not all vehicles can both drive and fly.
-# class Vehicle:
-#     def drive(self):
-#         pass
+# In vehicles, some are drivable and some are flyable, with a note that some are both.
+# It is not logical for drive and fly to be contained in the same parent class, as shown in the following code.
 
-#     def fly(self):
-#         pass
+# Not recommended
 
-# # Car class inherits from Vehicle, but cars can't fly.
-# class Car(Vehicle):
-#     def drive(self):
-#         # Cars can drive, so this works fine.
-#         print("Driving on the road.")
+class Vehicle:
+    def drive(self):
+        pass
 
-#     def fly(self):
-#         # Cars can't fly, so we raise an error.
-#         raise NotImplementedError("Cars can't fly.")
+    def fly(self):
+        pass
 
-# # Airplane class inherits from Vehicle, but airplanes can't drive.
-# class Airplane(Vehicle):
-#     def fly(self):
-#         # Airplanes can fly, so this works fine.
-#         print("Flying in the sky.")
+# Car class inherits from Vehicle, but cars can't fly.
+class Car(Vehicle):
+    def drive(self):
+        # Cars can drive, so this works fine.
+        print("Driving on the road.")
 
-#     def drive(self):
-#         # Airplanes can't drive, so we raise an error.
-#         raise NotImplementedError("Airplanes can't drive.")
+    def fly(self):
+        # Cars can't fly, so we raise an error.
+        raise NotImplementedError("Cars can't fly.")
+
+# Airplane class inherits from Vehicle, but airplanes can't drive.
+class Airplane(Vehicle):
+    def fly(self):
+        # Airplanes can fly, so this works fine.
+        print("Flying in the sky.")
+
+    def drive(self):
+        # Airplanes can't drive, so we raise an error.
+        raise NotImplementedError("Airplanes can't drive.")
 
 
 # Better approach: Use separate classes for Drivable and Flyable

@@ -1,3 +1,5 @@
+# Polymorphism - for extensibility,code can be extended without modifying the orginal structure
+
 # Define a base class Player
 class Player:
     def play(self):

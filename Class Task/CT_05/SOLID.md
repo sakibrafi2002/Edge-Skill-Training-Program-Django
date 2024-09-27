@@ -1,13 +1,12 @@
 # SOLID principle
 
-***S*** -> Single Dependency principle : A class must perform a single task.</br>
-***O*** -> Open Close principle : A core or parent class is closed for modifications and open for extension (child class).</br>
-***L*** -> Liskov substitution principle: The child class must support all the method of parent class, otherwise substitute the parent class in other different classes.</br>
-***I*** -> Interface segregation principle : If a parent class contains methods where some child explicitly use some method and the other use the other methods, then separate these feature by having multiple parent class so that it does not have any impact on other.</br>
-***D*** -> Dependency inversion principle : The higher level classes (parent) must not depend on lower (child) level  class.</br>
+**_S_** -> Single Dependency principle : A class must perform a single task.</br>
+**_O_** -> Open Close principle : A core or parent class is closed for modifications and open for extension (child class).</br>
+**_L_** -> Liskov substitution principle: The child class must support all the method of parent class, otherwise substitute the parent class in other different classes.</br>
+**_I_** -> Interface segregation principle : If a parent class contains methods where some child explicitly use some method and the other use the other methods, then separate these feature by having multiple parent class so that it does not have any impact on other.</br>
+**_D_** -> Dependency inversion principle : The higher level classes (parent) must not depend on lower (child) level class.</br>
 
 ## **By Chatgpt:**
-Certainly! Here’s a corrected and organized explanation of the SOLID principles:
 
 ### SOLID Principles
 

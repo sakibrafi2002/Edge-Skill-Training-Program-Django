@@ -26,6 +26,7 @@ class Rectangle(Shape):
     def area(self):
         return self.width * self.height  # width * height
 
+# Now you want to add a new shape of square , you can extend the shape
 # New class 'Square' that inherits from 'Shape'
 class Square(Shape):
     def __init__(self, side):

@@ -1,3 +1,5 @@
+# Encapsulation - for public private
+
 # Define a base class Player
 class Player:
     def play(self):
@@ -7,6 +9,7 @@ class Player:
 # Define a FootballPlayer class that inherits from Player
 class FootballPlayer(Player):
     def __init__(self, type):
+         # "__" defines for private variable
         # Initialize the FootballPlayer with a private type attribute
         self.__type = type
     
@@ -69,7 +72,7 @@ class CricketPlayer(Player):
 # Create instances of FootballPlayer and CricketPlayer
 type1 = FootballPlayer("Football")
 type2 = CricketPlayer("Cricketer")
-type2 = CricketPlayer("Cricketer2")
+
 # Call the play method for each instance
 type1.play()  # This will print: Footballer plays Football
 type2.play()  # This will print: Cricketer plays Cricketer

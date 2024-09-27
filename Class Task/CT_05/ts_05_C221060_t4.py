@@ -1,6 +1,6 @@
 # Abstraction is like template class that defines what methods or shape the child classes will look like
 # ABC and abstractmethod means that all the child of parent(Player) must have the "play" method defined,otherwise its an error
-# alternative of this is in the next tast "TS_05.C221046.05.py" (alternative)
+# alternative of this is in the next task "ts_05_C221060_t5.py" (alternative)
 
 from abc import ABC, abstractmethod
 # Define a base class Player
