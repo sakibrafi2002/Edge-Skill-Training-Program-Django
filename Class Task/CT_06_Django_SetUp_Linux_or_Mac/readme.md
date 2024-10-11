@@ -28,11 +28,11 @@ pip install django
 ```
 ## Now create a new django project
 ```
-django-admin startproject myproject
+django-admin startproject MyProject1
 ```
-## goto the "myproject" directory
+## goto the "MyProject1" directory
 ```
-cd myproject
+cd MyProject1
 ```
 ## Run the project in localhost
 ```
