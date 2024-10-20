@@ -16,7 +16,7 @@
 
 #### ***Class 4*** : [OOP Basics](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/CT_04_OOP)
 
-#### ***Class 5*** : [Inheritance_Polymorphism_Encapsulation_ABstraction_SOLID](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/CT_05_OOP_Properties_and_Principles)
+#### ***Class 5*** : [Inheritance_Polymorphism_Encapsulation_Abstraction_SOLID_Principles](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/CT_05_OOP_Properties_and_Principles)
 
 #### ***Class 6*** : [Django Setup](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/CT_06_Django_SetUp_Linux_or_Mac)
 
