@@ -13,3 +13,8 @@ sqlitebrowser
 ```
 python3 manage.py shell
 ```
+## After creating model make migrations
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
