@@ -22,4 +22,4 @@
 
 #### ***Class 7*** : [Models and ORM](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_07_Modules_and_ORM)
 
-#### ***Class 8*** : [Views / Class views](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_08_FBVs_and_CBVs)
+#### ***Class 8*** : [Function Based Views and Class Based Views](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_08_FBVs_and_CBVs)
