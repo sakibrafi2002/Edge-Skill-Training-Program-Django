@@ -9,7 +9,7 @@ sudo apt install sqlitebrowser
 ```
 sqlitebrowser
 ```
-## activate django shell
+## Activate Django shell
 ```
 python3 manage.py shell
 ```
@@ -24,7 +24,7 @@ or
 ```
 py manage.py makemigrations
 ```
-### Changes are ready to make impact on db. Now,
+### Changes are ready to make an impact on the database. Now,
 ```
 python3 manage.py migrate
 ```
@@ -33,12 +33,12 @@ or
 py manage.py migrate
 ```
 
-### suppose you are adding a new field in an existing model
+### Suppose you are adding a new field to an existing model
 ***remember to add (null = true, blank true)***  , this will prevent the conflict.
 ### Then make migrations and then migrate
 
-## If you are facing problem and want to migrate all newly
-### ***Step 1:*** delte all ".py" file in migrations folder except the "__init__" file
+## If you are facing a problem and want to migrate all newly
+### ***Step 1:*** delete all ".py" files in migrations folder except the "__init__" file
 ### ***Step 2:*** Drop the DB: locate the database file and run
 ```
 rm db.sqlite3
@@ -48,7 +48,7 @@ rm db.sqlite3
 ```
 python3 manage.py makemigrations
 ```
-### Changes are ready to make impact on db. Now,
+### Changes are ready to make an impact on the database. Now,
 ```
 python3 manage.py migrate
 ```
