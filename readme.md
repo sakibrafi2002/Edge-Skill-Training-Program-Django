@@ -25,3 +25,5 @@
 #### ***Class - 08*** : [Function Based Views and Class Based Views](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_08_FBVs_and_CBVs)
 
 #### ***Class - 09*** : [Templates and Forms](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_09_Templates_and_Forms)
+
+### *** Class - 10 *** : [Django Authentication](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_10_Django_Authentication)
