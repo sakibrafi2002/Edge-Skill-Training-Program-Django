@@ -2,7 +2,7 @@
 ## Course Subject : [Django](https://www.djangoproject.com/)
 
 ### Resources
-#### [**Course Plan**](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/blob/main/Course%20Plan.pdf)
+#### [**Course Plan**]([https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/blob/main/Course%20Plan.pdf](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/blob/main/Resources/Course%20Plan.pdf))
 
 #### [**Class Slides**](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Slides)
 ---
