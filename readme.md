@@ -27,3 +27,5 @@
 #### ***Class - 09*** : [Templates and Forms](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_09_Templates_and_Forms)
 
 #### ***Class - 10*** : [Django Authentication](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_10_Django_Authentication)
+
+#### ***Class - 11*** : [Django Rest Framework](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_11_Django_Rest_Framework/Blog)
