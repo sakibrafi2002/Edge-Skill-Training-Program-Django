@@ -1,17 +1,20 @@
-# from django
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View
-from django.views.generic import ListView,FormView
-from django.views.generic.edit import CreateView
+from django.views.generic import ListView, FormView
 from django.urls import reverse_lazy
+from django.views.generic.edit import CreateView
+from django.contrib.auth.decorators import permission_required
 
-# from books app
+
+#from books app
+from books.forms import ContactForm, BookForm
 from books.models import Book
-from books.forms import ContactForm,BookForm
 
 #from rest framework
+from rest_framework.mixins import RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin
 from rest_framework.response import Response
+from rest_framework.generics import GenericAPIView
 from rest_framework.views import APIView
 from books.serializers import BookSerializer
 
@@ -74,4 +77,21 @@ class BookListCreate(APIView):
             return Response(serializer.data, status=201)
         return Response(serializer.errors, status=400)
     
+    
+class BookGetUpdateDelete(RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin, GenericAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer 
+    http_method_names = ('get', 'post', 'put','delete')
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+    
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+    
+    def patch(self, request, *args, **kwargs):
+        return self.partial_update(request, *args, **kwargs)
+    
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
     
