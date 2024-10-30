@@ -12,6 +12,7 @@ from books.forms import ContactForm, BookForm
 from books.models import Book
 
 #from rest framework
+from rest_framework import permissions
 from rest_framework.mixins import RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin
 from rest_framework.response import Response
 from rest_framework.generics import GenericAPIView
@@ -65,7 +66,10 @@ class CreateBookView(CreateView):
 
 #Rest framework API's
 class BookListCreate(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+    
     def get(self, request):
+        print(request.user)
         books = Book.objects.all()
         serializer = BookSerializer(books, many=True)
         return Response(serializer.data)
