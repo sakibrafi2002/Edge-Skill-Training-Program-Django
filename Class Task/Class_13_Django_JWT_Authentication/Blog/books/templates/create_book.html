@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Book</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-lg bg-white shadow-md rounded-lg p-8">
+        <h1 class="text-3xl font-semibold text-center mb-6">Create a New Book</h1>
+
+        <!-- Form Section -->
+        <form method="post" novalidate>
+            {% csrf_token %}
+            
+            <!-- Django form fields with Tailwind styling manually added -->
+            <div class="mb-4">
+                <label class="block text-gray-700">Title</label>
+                <input type="text" name="title" id="id_title" class="border border-gray-300 rounded-lg p-2 w-full"
+                    value="{{ form.title.value|default:'' }}">
+                {% if form.title.errors %}
+                    <p class="text-red-500 text-sm mt-2">{{ form.title.errors }}</p>
+                {% endif %}
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700">Description</label>
+                <textarea name="description" id="id_description" class="border border-gray-300 rounded-lg p-2 w-full">{{ form.description.value|default:'' }}</textarea>
+                {% if form.description.errors %}
+                    <p class="text-red-500 text-sm mt-2">{{ form.description.errors }}</p>
+                {% endif %}
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700">Publication Date</label>
+                <input type="date" name="publication_date" id="id_publication_date" class="border border-gray-300 rounded-lg p-2 w-full"
+                    value="{{ form.publication_date.value|default:'' }}">
+                {% if form.publication_date.errors %}
+                    <p class="text-red-500 text-sm mt-2">{{ form.publication_date.errors }}</p>
+                {% endif %}
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700">Author</label>
+                <select name="author" id="id_author" class="border border-gray-300 rounded-lg p-2 w-full">
+                    {% for option in form.author.field.queryset %}
+                        <option value="{{ option.id }}" {% if option.id == form.author.value %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+                {% if form.author.errors %}
+                    <p class="text-red-500 text-sm mt-2">{{ form.author.errors }}</p>
+                {% endif %}
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-700">Price</label>
+                <input type="number" step="0.01" name="price" id="id_price" class="border border-gray-300 rounded-lg p-2 w-full"
+                    value="{{ form.price.value|default:'' }}">
+                {% if form.price.errors %}
+                    <p class="text-red-500 text-sm mt-2">{{ form.price.errors }}</p>
+                {% endif %}
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
