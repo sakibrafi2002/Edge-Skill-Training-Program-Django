@@ -32,4 +32,4 @@
 
 #### ***Class - 12*** : [Serialization_Deserialization_Mixins_Decorators](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_12_Serialization_Deserialization_Mixins_Decorators)
 
-### ***Class - 13*** : [Django_JWT_Authentication](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_13_Django_JWT_Authentication)
+#### ***Class - 13*** : [Django_JWT_Authentication](https://github.com/sakibrafi2002/Edge-Skill-Training-Program-Django/tree/main/Class%20Task/Class_13_Django_JWT_Authentication)
