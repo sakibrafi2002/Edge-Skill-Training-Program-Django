@@ -12,17 +12,18 @@ Viva:
 2. Django
 3. OOP
 4. Design Pattern
+
 Problem Solving: 
 1. Python
 2. Django
 
 
-generator ,
+generator,
 threading,
 sync, async,
 decorators,
 aggregate vs annonate,
 multithreading,
 constructors,
-destructure,
+destructors,
 new function call,
