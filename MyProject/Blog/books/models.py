@@ -12,6 +12,9 @@ class Author(models.Model):
 class Publisher(models.Model):
     name = models.CharField(max_length=200)
     address = models.CharField(max_length=2000,default="")
+    
+    def __str__(self):
+        return self.name
 
 
 class Book(models.Model):

@@ -19,7 +19,7 @@ class ContactForm(forms.Form):
 class BookForm(forms.ModelForm):
     class Meta:
         model = Book
-        fields = ['title', 'description', 'publication_date', 'author', 'price']
+        fields = ['title', 'description', 'publication_date', 'author', 'publisher', 'price']
 
         # Custom validation for the price field
     def clean_price(self):
